@@ -1,0 +1,10 @@
+
+N_cols     = 60;
+zero_2_one = linspace(0,1, N_cols)';
+ones_2_zer = linspace(1,0,N_cols)';  ones_2_zer(1) = [];
+Col        = [[zero_2_one, zero_2_one,ones(N_cols,1)];[ ones(N_cols-1,1) , ones_2_zer,  ones_2_zer ]] ;
+
+
+    
+imagesc(Mode_1)  ;   colormap(Col) ;  caxis(Col_Lim);   title('First mode Cov inact')                                      
+                
